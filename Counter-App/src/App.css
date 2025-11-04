@@ -1,42 +1,85 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+:root {
+  --bg: #555;
+  --card: #ddd;
+  --muted: #265ece;
+  --accent: #111827;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Roboto, system-ui, -apple-system, "Segoe UI",
+    "Helvetica Neue", Arial;
+  background: var(--bg);
+  color: var(--accent);
+  display: flex;
+  min-height: 100vh;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.app {
+  width: 620px;
+  max-width: 95%;
+}
+
+h1 {
+  margin: 0 0 20px 0;
+  font-size: 28px;
+}
+
+.counter {
+  background: var(--card);
+  border-radius: 10px;
+  padding: 18px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.display button {
+  font-size: 22px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  cursor: pointer;
+  color: #111827;
+  justify-content: center;
+}
+
+.display .value {
+  min-width: 80px;
   text-align: center;
+  font-size: 22px;
+  font-weight: 600;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.controls button {
+  padding: 8px 12px;
+  background: #efefef;
+  border: 1px solid #646b7a;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #555;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.meta {
+  color: var(--muted);
+  font-size: 13px;
 }
