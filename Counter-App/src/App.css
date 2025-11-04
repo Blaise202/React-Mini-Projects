@@ -24,11 +24,6 @@ body {
   max-width: 95%;
 }
 
-h1 {
-  margin: 0 0 20px 0;
-  font-size: 28px;
-}
-
 .counter {
   background: var(--card);
   border-radius: 10px;
