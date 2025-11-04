@@ -42,16 +42,6 @@ body {
   gap: 12px;
 }
 
-.display button {
-  font-size: 22px;
-  border-radius: 8px;
-  border: 1px solid #e5e7eb;
-  background: #fff;
-  cursor: pointer;
-  color: #111827;
-  justify-content: center;
-}
-
 .display .value {
   min-width: 80px;
   text-align: center;
